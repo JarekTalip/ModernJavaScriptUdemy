@@ -20,12 +20,17 @@
             <span class="card-title">Task List</span>
             <div class="collection-item">TEST DIV</div>
             <div class="row">
-              <form id="task-form">
+              <form id="task-form" action="index.php">
                 <div class="input-field col s12">
                   <input type="text" name="task" id="task" value="Walk the dog">
                   <label for="task">New Task</label>
                 </div>
             </div>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
             <input type="submit" value="Add Task" class="btn">
             </form>
           </div>
@@ -63,7 +68,7 @@
                 </a>
               </li>
             </ul>
-            <a class="clear-tasks btn black" href="">Clear Tasks</a>
+            <a class="clear-tasks btn black" href="#">Clear Tasks</a>
           </div>
         </div>
       </div>
