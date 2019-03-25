@@ -1,0 +1,13 @@
+body {
+  background-color: #235;
+  color: red;
+}
+
+h1 {
+  border: 3px solid white;
+}
+
+.newHeading {
+  color: #fff;
+  border: 3px solid red;
+}
