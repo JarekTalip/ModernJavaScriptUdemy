@@ -37,7 +37,24 @@ class Person {
   }
 }
 
+// Another object constructor extends Person
+
+class Customer extends Person {
+  constructor(firstName, lastName, bod, phone, membership) {
+    super(firstName, lastName, bod);
+
+    this.phone = phone;
+    this.membership = membership;
+  }
+
+  static cost() {
+    return 500;
+  }
+}
+
 const jarek = new Person('Jaroslaw','Pilat','1974-05-02');
+const marek = new Customer('Marek','Kowalski','1980-01-05','555-555-555','Standard');
+
 
 console.log(jarek);
 console.log(jarek.greeting());
@@ -47,3 +64,8 @@ jarek.getMarried('Kowalski');
 console.log(jarek);
 
 console.log(Person.addnum(3,15));
+
+console.log(marek);
+console.log(marek.greeting());
+
+console.log(`Membership cost: ${Customer.cost()}`);
