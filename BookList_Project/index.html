@@ -10,6 +10,7 @@
 <style>
 .success, .error {
   color: white;
+  font-weight: 700;
   padding: 5px;
   margin: 5px 0 15px 0;
 }
@@ -19,9 +20,13 @@
 }
 
 .error {
-  background: orange;
+  background: purple;
 }
 
+.delete {
+  text-decoration: none;
+  color: red;
+}
 </style>
 
 <body>
@@ -37,7 +42,7 @@
         <input type="text" id="autor" class="u-full-width">
       </div>
       <div>
-        <label for="ISBN">ISBN</label>
+        <label for="ISBN">ISBN#</label>
         <input type="text" id="ISBN" class="u-full-width">
       </div>
       <div>
@@ -58,6 +63,6 @@
     <tbody id="book-list"></tbody>
   </table>
 
-  <script src="app.js"></script>
+  <script src="appIS6.js"></script>
 </body>
 </html>
