@@ -10,9 +10,12 @@ function getJokes(e) {
       const response = JSON.parse(this.responseText);
       let output = '';
       
+      console.log(response);
+
       if (response.type === 'success') {
         response.value.forEach(function(joke) {
           output += `<li>${joke.joke}</li>`
+          console.log(joke, output);
         });
       } else{
         output+='Coś poszło źle!'
